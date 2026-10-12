@@ -1,5 +1,5 @@
 /* Reset & Base Styles */
-•⁠  ⁠{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -179,7 +179,7 @@ body {
 
 .showcase-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
     gap: 10px;
 }
 
@@ -188,6 +188,8 @@ body {
     background-color: transparent; /* Removes the visible box background */
     border-radius: 12px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .showcase-card img {
@@ -201,6 +203,7 @@ body {
     text-align: center;
     max-width: 100%;
     margin-bottom: 20px;
+    flex-grow: 1; /* Keeps images aligned when header text lengths differ */
 }
 
 .showcase-header h3 {
@@ -230,8 +233,7 @@ body {
 .showcase-image-container img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ensures images scale perfectly to fill the box without distorting */
-    background-color: #faf8f5 ;
+    object-fit: cover; /* Fills the box without distorting */
     display: block;
 }
 /* Tablet & Desktop Layout: Side-by-Side */
@@ -1490,5 +1492,181 @@ body {
 @media (min-width: 768px) {
     .artworks-sale-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small-screen refinements */
+img {
+    max-width: 100%;
+}
+
+.pricing-table-wrapper {
+    overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-image-wrapper {
+        height: 280px;
+    }
+
+    .offerings-text-box h2,
+    .faq-intro h2,
+    .cta-content h2,
+    .portfolio-text h2,
+    .artshop-header-container h1 {
+        font-size: 1.7rem;
+    }
+
+    .testimonial-section blockquote {
+        font-size: 1.3rem;
+    }
+
+    .faq-question {
+        font-size: 1.1rem;
+        gap: 12px;
+    }
+
+    .faq-answer p {
+        padding-right: 0;
+    }
+
+    .medium-image-container {
+        height: 360px;
+    }
+
+    .gallery-item {
+        height: 160px;
+    }
+
+    .mini-artworks-grid .artwork-card img {
+        height: 200px;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 12px 14px;
+        font-size: 0.88rem;
+    }
+
+    .artwork-purchase-row {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+/* Mobile Header & Sidebar Navigation */
+.nav-toggle,
+.nav-overlay {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 16px;
+        border-bottom: 1px solid #e8dfd1;
+    }
+
+    .logo-container {
+        width: 56px;
+        height: 56px;
+        margin-bottom: 0;
+    }
+
+    .nav-toggle {
+        position: relative;
+        z-index: 102;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        background: none;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .nav-toggle span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: #3d352b;
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .nav-open .nav-toggle span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .nav-open .nav-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-open .nav-toggle span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 101;
+        width: min(280px, 80vw);
+        height: 100vh;
+        height: 100dvh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 6px;
+        padding: 90px 20px 30px;
+        background-color: #faf8f5;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.08);
+        font-size: 1rem;
+        overflow-y: auto;
+        transform: translateX(100%);
+        visibility: hidden;
+        transition: transform 0.3s ease, visibility 0.3s ease;
+    }
+
+    .nav-open .main-nav {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    .main-nav a {
+        padding: 12px 16px;
+        border-radius: 8px;
+    }
+
+    .nav-overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        z-index: 99;
+        background-color: rgba(61, 53, 43, 0.35);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .nav-open .nav-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body.nav-open {
+        overflow: hidden;
     }
 }
