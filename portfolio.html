@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curated Portfolio | ART.sthetic</title>
+    <meta name="description" content="Selected works by ART.sthetic: live Arabic calligraphy, textured wall art, Islamic calligraphy canvases and custom phone cases.">
+    <link rel="canonical" href="https://aminarazak.github.io/artsthetic.ae/portfolio.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ART.sthetic">
+    <meta property="og:title" content="Curated Portfolio | ART.sthetic">
+    <meta property="og:description" content="Selected works by ART.sthetic: live Arabic calligraphy, textured wall art, Islamic calligraphy canvases and custom phone cases.">
+    <meta property="og:url" content="https://aminarazak.github.io/artsthetic.ae/portfolio.html">
+    <meta property="og:image" content="https://aminarazak.github.io/artsthetic.ae/images/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,23 +26,27 @@
     <header class="site-header">
         <div class="logo-container">
             <a href="index.html">
-                <img src="images/logo.png" alt="ART.sthetic Logo" class="logo-img">
+                <img src="images/logo.png" alt="ART.sthetic Logo" class="logo-img" width="130" height="130">
             </a>
         </div>
-        <nav class="main-nav">
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services & Experiences</a>
             <a href="portfolio.html" class="active">Portfolio</a>
             <a href="shop.html">Art Shop</a>
         </nav>
     </header>
+    <div class="nav-overlay"></div>
 
     <!-- Portfolio Intro Section -->
     <section class="portfolio-intro-section">
         <div class="portfolio-intro-container">
             <div class="portfolio-intro-card">
                 <div class="portfolio-text">
-                    <h2>Curated portfolio</h2>
+                    <h1>Curated portfolio</h1>
                     <p>Discover the harmony of timeless heritage and modern luxury. Based in Dubai, Artsthetic creates breathtaking visual narratives through refined Islamic artworks, textured abstract canvas art, and captivating live Arabic calligraphy experiences for prestigious events and bespoke interior spaces.</p>
                 </div>
                 
@@ -42,35 +58,35 @@
     <section class="portfolio-grid-section">
         <div class="portfolio-grid-container">
             <div class="section-title-box">
-                <h3>Selected works and live activations</h3>
+                <h2>Selected works and live activations</h2>
                 <p>Explore our portfolio across live Arabic calligraphy, tactile textured wall art, and intricate modern Islamic calligraphy tailored for private collectors.</p>
             </div>
 
             <!-- Responsive Portfolio Image Grid -->
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="images/img9.jpeg" alt="Calligraphy Showcase 1">
+                    <img src="images/img9.webp" srcset="images/img9-480.webp 480w, images/img9.webp 750w" sizes="(max-width: 767px) 100vw, 600px" width="750" height="1000" alt="Arabic calligraphy pieces on paper with dried flowers" loading="lazy" decoding="async">
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/img11.jpeg" alt="Calligraphy Showcase 2">
+                    <img src="images/img11.webp" srcset="images/img11-480.webp 480w, images/img11.webp 750w" sizes="(max-width: 767px) 100vw, 600px" width="750" height="1000" alt="Abstract canvas with blush shapes and line-drawn leaves" loading="lazy" decoding="async">
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/img12.jpeg" alt="Calligraphy Showcase 3">
+                    <img src="images/img12.webp" srcset="images/img12-480.webp 480w, images/img12.webp 1000w" sizes="(max-width: 767px) 100vw, 600px" width="1000" height="896" alt="Textured palm tree arches canvas in pink and yellow" loading="lazy" decoding="async">
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/img13.jpeg" alt="Calligraphy Showcase 4">
+                    <img src="images/img13.webp" srcset="images/img13-480.webp 480w, images/img13.webp 1000w" sizes="(max-width: 767px) 100vw, 600px" width="1000" height="971" alt="Black canvas with gold Asmaul Husna calligraphy" loading="lazy" decoding="async">
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/img14.jpeg" alt="Calligraphy Showcase 4">
+                    <img src="images/img14.webp" srcset="images/img14-480.webp 480w, images/img14.webp 750w" sizes="(max-width: 767px) 100vw, 600px" width="750" height="1000" alt="Ayatul Kursi calligraphy canvas lit by a spotlight" loading="lazy" decoding="async">
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/img15.jpeg" alt="Calligraphy Showcase 4">
+                    <img src="images/img15.webp" srcset="images/img15-480.webp 480w, images/img15.webp 750w" sizes="(max-width: 767px) 100vw, 600px" width="750" height="1000" alt="Arabic calligraphy canvas with gold Allah lettering on an easel" loading="lazy" decoding="async">
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/img10.jpeg" alt="Calligraphy Showcase 4">
+                    <img src="images/img10.webp" srcset="images/img10-480.webp 480w, images/img10.webp 750w" sizes="(max-width: 767px) 100vw, 600px" width="750" height="1000" alt="Ayatul Kursi calligraphy canvas with gold Allah lettering" loading="lazy" decoding="async">
                 </div>
                 <div class="portfolio-item">
-                    <img src="images/img17.jpeg" alt="Calligraphy Showcase 4">
+                    <img src="images/img17.webp" srcset="images/img17-480.webp 480w, images/img17.webp 1000w" sizes="(max-width: 767px) 100vw, 600px" width="1000" height="943" alt="Calligrapher working on a large Arabic script canvas" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -83,20 +99,21 @@
             </div>
             <div class="phone-cases-grid">
                 <div class="phone-case-card">
-                    <img src="images/ph1.jpeg" alt="Phone Case Calligraphy 1">
+                    <img src="images/ph1.webp" srcset="images/ph1-480.webp 480w, images/ph1.webp 759w" sizes="(max-width: 767px) 100vw, 600px" width="759" height="1000" alt="Navy phone case with gold Arabic calligraphy" loading="lazy" decoding="async">
                 </div>
                 <div class="phone-case-card">
-                    <img src="images/ph2.jpeg" alt="Phone Case Calligraphy 2">
+                    <img src="images/ph2.webp" srcset="images/ph2-480.webp 480w, images/ph2.webp 802w" sizes="(max-width: 767px) 100vw, 600px" width="802" height="1000" alt="Teal phone case with gold Arabic calligraphy" loading="lazy" decoding="async">
                 </div>
                 <div class="phone-case-card">
-                    <img src="images/ph3.jpeg" alt="Phone Case Calligraphy 2">
+                    <img src="images/ph3.webp" srcset="images/ph3-480.webp 480w, images/ph3.webp 750w" sizes="(max-width: 767px) 100vw, 600px" width="750" height="1000" alt="White phone case with black Arabic calligraphy" loading="lazy" decoding="async">
                 </div>
                 <div class="phone-case-card">
-                    <img src="images/ph4.jpeg" alt="Phone Case Calligraphy 2">
+                    <img src="images/ph4.webp" srcset="images/ph4-480.webp 480w, images/ph4.webp 883w" sizes="(max-width: 767px) 100vw, 600px" width="883" height="1000" alt="Two calligraphy phone cases beside a pen holder" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
     </section>
+    <!-- Testimonial Section -->
     <section class="testimonial-section">
         <div class="testimonial-content">
             <blockquote>
@@ -105,11 +122,12 @@
             </blockquote>
         </div>
     </section>
+
     <!-- Portfolio Call to Action Section -->
     <section class="portfolio-cta-section">
         <div class="portfolio-cta-container">
             <div class="portfolio-cta-image">
-                <img src="images/img18.jpeg" alt="Artistic Workspace & Calligraphy">
+                <img src="images/img18.webp" srcset="images/img18-480.webp 480w, images/img18.webp 750w" sizes="(max-width: 767px) 100vw, 600px" width="750" height="1000" alt="Neutral calligraphy canvases styled with pampas grass" loading="lazy" decoding="async">
             </div>
             <div class="portfolio-cta-content">
                 <h2>Bring artistry to your next project</h2>
@@ -119,8 +137,11 @@
         </div>
     </section>
 
-      <!-- Get In Touch Info -->
-      <div class="footer-block">
+    <!-- Footer / Contact Section -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-content-side">
+                <div class="footer-block">
         <h3>Get in touch</h3>
         <p class="company-tagline">artsthetic.ae</p>
         <p class="company-address">Dubai, United Arab Emirates</p>
@@ -134,28 +155,30 @@
         <div class="social-follow">
             <p>Follow our art</p>
             <div class="social-icons">
-                <a href="https://instagram.com/art.sthetic.ae" target="_blank" class="social-icon" aria-label="Instagram">
+                <a href="https://instagram.com/art.sthetic.ae" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
                     <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                 </a>
-                <a href="https://wa.me/971523423255" target="_blank" class="social-icon" aria-label="WhatsApp">
+                <a href="https://wa.me/971523423255" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp">
                     <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                 </a>
-                <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                <a href="https://www.facebook.com/share/1EHKfUYZZa/?mibextid=wwXIfr" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
                     <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
                 </a>
-                <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube">
+                <a href="https://youtube.com/@amina-d4s2t?si=42t1UaNTRmc-JdF9" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
                     <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                 </a>
             </div>
         </div>
     </div>
+            </div>
+        </div>
 
-</div>
-</div>
+        <!-- Copyright Bar -->
         <div class="footer-bottom-bar">
             <p>&copy; 2026 artsthetic.ae</p>
         </div>
     </footer>
 
+<script src="nav.js"></script>
 </body>
 </html>
