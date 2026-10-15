@@ -29,13 +29,17 @@
                 <img src="images/logo.png" alt="ART.sthetic Logo" class="logo-img" width="130" height="130">
             </a>
         </div>
-        <nav class="main-nav">
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
             <a href="index.html">Home</a>
             <a href="services.html">Services & Experiences</a>
             <a href="portfolio.html" class="active">Portfolio</a>
             <a href="shop.html">Art Shop</a>
         </nav>
     </header>
+    <div class="nav-overlay"></div>
 
     <!-- Portfolio Intro Section -->
     <section class="portfolio-intro-section">
@@ -109,6 +113,7 @@
             </div>
         </div>
     </section>
+    <!-- Testimonial Section -->
     <section class="testimonial-section">
         <div class="testimonial-content">
             <blockquote>
@@ -117,6 +122,7 @@
             </blockquote>
         </div>
     </section>
+
     <!-- Portfolio Call to Action Section -->
     <section class="portfolio-cta-section">
         <div class="portfolio-cta-container">
@@ -131,8 +137,11 @@
         </div>
     </section>
 
-      <!-- Get In Touch Info -->
-      <div class="footer-block">
+    <!-- Footer / Contact Section -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-content-side">
+                <div class="footer-block">
         <h3>Get in touch</h3>
         <p class="company-tagline">artsthetic.ae</p>
         <p class="company-address">Dubai, United Arab Emirates</p>
@@ -161,13 +170,15 @@
             </div>
         </div>
     </div>
+            </div>
+        </div>
 
-</div>
-</div>
+        <!-- Copyright Bar -->
         <div class="footer-bottom-bar">
             <p>&copy; 2026 artsthetic.ae</p>
         </div>
     </footer>
 
+<script src="nav.js"></script>
 </body>
 </html>
